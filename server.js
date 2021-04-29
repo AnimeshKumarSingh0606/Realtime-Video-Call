@@ -10,7 +10,7 @@ const io = require("socket.io")(server, {
 	}
 })
 
-router.get("/", (req, res) => {
+app.get("/", (req, res) => {
 	res.send({ response: "Server is up and running." }).status(200);
   });
 
